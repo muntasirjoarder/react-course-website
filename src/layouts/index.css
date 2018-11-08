@@ -88,6 +88,20 @@ a{
   justify-items: center;
 }
 
+.CardGroup{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 40px;
+  margin: 50px 40px;
+  justify-items: center;
+}
+
+.Cards h2{
+  font-size: 45px;
+  width: 100%;
+  text-justify: center;
+}
+
 @keyframes HeroAnimation {
   0%{
     opacity: 0;
@@ -102,5 +116,8 @@ a{
 @media(max-width: 640px){
   .Hero .Logos{
     grid-template-columns: repeat(3,1fr);
+  }
+  .CardGroup{
+    grid-template-columns: repeat(2,1fr);
   }
 }
