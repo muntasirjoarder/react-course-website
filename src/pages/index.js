@@ -3,7 +3,25 @@ import Link from 'gatsby-link'
 import Card from '../components/Card'
 import Section from '../components/Section'
 import Wave from '../components/Wave'
+import staticData from '../../staticData.json'
+import Cell from '../components/Cell'
+import styled from 'styled-components'
 
+const SectionCaption = styled.div`
+  font-weight: 600;
+  font-size: 18px;
+  text-tranform: uppercase;
+  color: #94a4ba;
+  text-align: center;
+`
+
+const SectionGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+`
 
 const IndexPage = () => (
   <div>
@@ -62,6 +80,16 @@ const IndexPage = () => (
       text="Lorem ipsum dolor sit amet, eruditi expetenda ex vix, ius ne aliquid mnesarchum, delenit labores id mei. Dicit paulo antiopam eos ne. Eu sed tempor option, eam ut tractatos patrioque. Eam ex tale munere luptatum, quo ad saperet adipiscing, debet tamquam cu sea."
     />
 
+
+     <SectionCaption>12 Courses. More coming</SectionCaption>
+     <SectionGroup>
+        {staticData.cells.map(cell => (
+          <Cell 
+            image = {cell.image}
+            title = {cell.title}
+          />
+        ))}
+     </SectionGroup>
    
   </div>
 )
