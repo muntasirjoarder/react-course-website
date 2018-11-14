@@ -12,7 +12,7 @@ const CellGroup = styled.div`
 const CellImage = styled.div`
    width: 60px;
    height: 60px;
-   background: black;
+   background: linear-gradient(102.24deg,#9b51e0 0%, #3436e7 100%);
    border-radius: 10px;
    background-image: url(${props => props.image});
    background-size: 60px;
