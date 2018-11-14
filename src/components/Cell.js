@@ -6,6 +6,7 @@ const CellGroup = styled.div`
  grid-template-columns: 60px auto;
  grid-gap: 25px;
  align-items: center;
+ 
 `
 
 const CellImage = styled.div`
@@ -13,8 +14,9 @@ const CellImage = styled.div`
    height: 60px;
    background: black;
    border-radius: 10px;
-   background: url(${props => props.image});
+   background-image: url(${props => props.image});
    background-size: 60px;
+  
 `
 
 const CellTitle = styled.div`
