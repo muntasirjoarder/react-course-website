@@ -27,8 +27,8 @@ const IndexPage = () => (
   <div>
     <div className="Hero">
       <div className="HeroGroup">
-          <h1>Learn to <br/>design and code React apps</h1>
-          <p>Build complete React application in 6 hours of extensive lessons.</p>
+          <h1>Develop React apps</h1>
+          <p>Build complete React application in 6 hours.</p>
           <Link to="/page-2/">Watch the video</Link>   
           <div className="Logos">
             <img src={require('../images/logo-sketch.png')} width="50" />
